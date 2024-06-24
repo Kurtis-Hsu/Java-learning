@@ -1,5 +1,3 @@
-package cn.kurtis.study;
-
 public class HelloWorld
 {
     public static void main(String[] args)

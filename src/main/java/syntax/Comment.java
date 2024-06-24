@@ -1,4 +1,4 @@
-package cn.kurtis.study.syntax;
+package syntax;
 
 // Java 只有三种注释
 public class Comment

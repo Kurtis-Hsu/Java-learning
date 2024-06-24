@@ -1,4 +1,4 @@
-package cn.kurtis.study.syntax;
+package syntax;
 
 import static java.lang.System.out;
 
@@ -8,6 +8,7 @@ public class Variable
     // 变量命名只能由字母、数字、下划线组成，数字不可以用作开头
     // Java 使用 Unicode 字符集，字母可以是任意语言中可作为字母的字符，例如中文的汉字
     int 变量 = 1;
+    int 变量1 = 1, 变量2 = 2;
 
     // Java 有 8 种基本数据类型和引用类型
     // 整数字面量默认为 int 类型
@@ -36,6 +37,8 @@ public class Variable
 
     public static void main(String[] args)
     {
+        var variable = 123; // Java 10 之后可以在局部使用 var 关键字声明变量，该关键字会自动进行类型推断
+
         final int dig = 1; // final 关键字定义常量，其值不可变
         // dig = 2; // 报错
 
@@ -69,5 +72,12 @@ public class Variable
         out.println("除法结果：" + c); // 整数除法会舍弃小数
         double d = a / (double) b;
         out.println("除法结果：" + d);
+
+        // 打印九九乘法表
+        for (int i = 1; i <= 9; i++)
+        {
+            for (int j = 1; j <= i; j++) out.printf(j != 1 ? "\t%d * %d = %d" : "%d * %d = %d", i, j, i * j);
+            out.println();
+        }
     }
 }
