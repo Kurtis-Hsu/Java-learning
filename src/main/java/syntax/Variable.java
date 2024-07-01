@@ -38,6 +38,8 @@ public class Variable
     public static void main(String[] args)
     {
         var variable = 123; // Java 10 之后可以在局部使用 var 关键字声明变量，该关键字会自动进行类型推断
+        var _ = 1; // Java 22 之后可以将变量匿名
+        var _ = 2;
 
         final int dig = 1; // final 关键字定义常量，其值不可变
         // dig = 2; // 报错
