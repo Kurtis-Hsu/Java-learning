@@ -5,6 +5,7 @@
       <option name="ADDITIONAL_TAGS" value="Date" />
     </inspection_tool>
     <inspection_tool class="OctalLiteral" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PreviewFeature" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <option name="ignoredErrors">
         <list>
@@ -14,5 +15,6 @@
         </list>
       </option>
     </inspection_tool>
+    <inspection_tool class="StringOperationCanBeSimplified" enabled="false" level="WARNING" enabled_by_default="false" />
   </profile>
 </component>

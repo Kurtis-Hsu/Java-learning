@@ -10,8 +10,15 @@
 
   <name>Java Learning Project</name>
 
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>jdk-base</module>
+    <module>mybatis-plus</module>
+  </modules>
+
   <properties>
-    <java.version>21</java.version>
+    <java.version>22</java.version>
     <global.encoding>UTF-8</global.encoding>
 
     <kotlin.compiler.target>${java.version}</kotlin.compiler.target>
@@ -22,5 +29,24 @@
     <project.build.sourceEncoding>${global.encoding}</project.build.sourceEncoding>
     <project.reporting.outputEncoding>${global.encoding}</project.reporting.outputEncoding>
     <maven.compiler.encoding>${global.encoding}</maven.compiler.encoding>
+
+    <maven.compiler.plugin.version>3.13.0</maven.compiler.plugin.version>
   </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${maven.compiler.plugin.version}</version>
+        <configuration>
+          <parameters>true</parameters>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+          <encoding>${project.build.sourceEncoding}</encoding>
+          <enablePreview>true</enablePreview>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>

@@ -32,13 +32,8 @@ public class SmtpTest
 
         try (var writer = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream())), true))
         {
-            var s = STR."EHLO example.com";
-            System.out.println(s);
-            writer.println(s);
+            writer.println("EHLO example.com");
         }
-        catch (IOException e)
-        {
-            throw new RuntimeException(e);
-        }
+        catch (IOException e) { throw new RuntimeException(e); }
     }
 }
