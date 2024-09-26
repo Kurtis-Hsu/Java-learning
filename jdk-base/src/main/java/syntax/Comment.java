@@ -24,8 +24,10 @@ public class Comment
      * 文档注释给元素添加文档
      * 可以使用 javadoc 生成文档
      */
-    static void doSth()
-    {
-        System.out.println("do sth");
-    }
+    static void doSth() { System.out.println("do sth"); }
+
+    /// Java 23 之后可以使用 markdown 语法写文档注释
+    ///
+    /// [Class] 引用
+    void markdown() { System.out.println("markdown"); }
 }

@@ -41,6 +41,8 @@ public class Variable
         var _ = 1; // Java 22 之后可以将变量匿名
         var _ = 2;
 
+        final var fin = 1;
+
         final int dig = 1; // final 关键字定义常量，其值不可变
         // dig = 2; // 报错
 

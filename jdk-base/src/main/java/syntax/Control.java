@@ -44,6 +44,16 @@ public class Control
                 out.println(666);
         }
 
+        var arg = new Object();
+
+        // Java 17 之后增加了 switch 的功能
+        switch (arg)
+        {
+            case null -> out.println("null");
+            case Class<?> _ -> out.println("Class");
+            default -> out.println("other");
+        }
+
         // while 循环
         i = 0;
         while (i < 5) out.println("while " + i++);
