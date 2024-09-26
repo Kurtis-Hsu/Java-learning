@@ -2,7 +2,7 @@ package syntax.lambda;
 
 public class ThisTest
 {
-    public static void main(String[] args)
+    public static void main(String... args)
     {
         new Test().test();
     }

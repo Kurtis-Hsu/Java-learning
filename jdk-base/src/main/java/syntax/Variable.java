@@ -35,7 +35,7 @@ public class Variable
     // void 也是一种基本类型，只可用于标记返回值为空
     void demo() { }
 
-    public static void main(String[] args)
+    public static void main(String... args)
     {
         var variable = 123; // Java 10 之后可以在局部使用 var 关键字声明变量，该关键字会自动进行类型推断
         var _ = 1; // Java 22 之后可以将变量匿名

@@ -5,7 +5,7 @@ import static java.lang.System.out;
 // 流程控制
 public class Control
 {
-    public static void main(String[] args)
+    public static void main(String... args)
     {
         int i;
         // if-else 语句

@@ -77,7 +77,7 @@ public enum KeyWords
 
     KeyWords(String description) { this.description = description; }
 
-    public static void main(String[] args)
+    public static void main(String... args)
     {
         Arrays
                 .stream(KeyWords.values())

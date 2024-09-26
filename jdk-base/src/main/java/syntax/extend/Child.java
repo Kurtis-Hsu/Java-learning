@@ -20,6 +20,6 @@ public class Child
     Child()
     {
         System.out.println("Child constructor");
-        super(); // Java 22 开始可以在调用构造器函数之前执行某些代码，这些代码会被编译器严格检查
+        // super(); // Java 22 开始可以在调用构造器函数之前执行某些代码，这些代码会被编译器严格检查
     }
 }

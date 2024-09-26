@@ -2,7 +2,7 @@ package syntax;
 
 public class Access
 {
-    public static void main(String[] args)
+    public static void main(String... args)
     {
         var demo = new AccessDemo1();
         demo.test();

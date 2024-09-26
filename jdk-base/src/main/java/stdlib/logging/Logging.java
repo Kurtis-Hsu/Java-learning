@@ -10,7 +10,7 @@ import java.util.logging.Logger;
  */
 public class Logging
 {
-    public static void main()
+    public static void main(String... args)
     {
         String configPath = String.join(File.separator, System.getProperty("user.dir"), "logging.properties");
         System.out.println("config path ---" + configPath);

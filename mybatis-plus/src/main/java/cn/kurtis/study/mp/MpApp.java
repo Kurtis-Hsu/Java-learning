@@ -6,5 +6,5 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @MapperScan("cn.kurtis.study.mp.mapper")
 @SpringBootApplication // @formatter:off
-public class MpApp { public static void main(String[] args) { SpringApplication.run(MpApp.class, args); }}
+public class MpApp { public static void main(String... args) { SpringApplication.run(MpApp.class, args); }}
 

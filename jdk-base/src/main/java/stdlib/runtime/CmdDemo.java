@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
  */
 public class CmdDemo
 {
-    public static void main(String[] args) throws Exception
+    public static void main(String... args) throws Exception
     {
         // 调用CMD命令
         String[] command = { "ping", "127.0.0.1" };

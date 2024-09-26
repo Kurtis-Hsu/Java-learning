@@ -4,7 +4,7 @@ import static java.lang.System.out;
 
 public class Methods
 {
-    public static void main(String[] args)
+    public static void main(String... args)
     {
         out.println(sum(1, 2));
         out.println(sum(1, 2, 3));

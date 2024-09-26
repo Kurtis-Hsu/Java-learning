@@ -146,10 +146,10 @@ import java.util.Date; // 增加一个特定的import语句解决报错
 
 class OOP
 {
-    public static void main(String[] args)
+    public static void main(String... args)
     {
         java.util.Date d1 = new java.util.Date();
-        java.sql.Date d2 = new java.sql.Date(...);
+        java.sql.Date d2 = new java.sql.Date();
         // 如果两个类都需要使用，那就必须在前面添加完整的包名
     }
 }
@@ -167,7 +167,7 @@ import static java.lang.System.out; // 导入指定的属性或方法
 
 class OOP
 {
-    public static void main(String[] args)
+    public static void main(String[] args) // String 数组参数可以删除
     {
         out.println("Hello World!"); // 此时就可以不写类名前缀直接使用静态属性
     }
@@ -187,7 +187,7 @@ package com.xxx; // 定义该类在com.xxx包下
 
 public class HelloWorld
 {
-    ...
+    // ...
 }
 ```
 

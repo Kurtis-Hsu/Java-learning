@@ -24,7 +24,7 @@ public class UnnamedInnerClass
 
                         @Override public String toString()
                         {
-                            return STR."\{test} - \{getClass().getName()}";
+                            return "%d - %s".formatted(test, getClass().getName());
                         }
                     }
             );
@@ -38,8 +38,8 @@ public class UnnamedInnerClass
         for (var v : TimeUnit.values()) System.out.println(v.getClass().getName());
     }
 
-    public static void main(String[] args)
+    public static void main(String... args)
     {
-        类型测试2();
+        类型测试();
     }
 }
