@@ -51,5 +51,11 @@ public class StreamDemo
         digits = digits.limit(10);
         System.out.println("==========");
         Stream.concat(decimals, digits).forEach(System.out::println); // 连接两个流
+        System.out.println("===== parallel =====");
+        var parallel = Stream.iterate(1, n -> n + 1).limit(10).parallel();
+        parallel.forEach(System.out::println);
+        System.out.println("===== ordered parallel =====");
+        var parallelOrdered = Stream.iterate(1, n -> n + 1).limit(10).parallel();
+        parallelOrdered.forEachOrdered(System.out::println);
     }
 }

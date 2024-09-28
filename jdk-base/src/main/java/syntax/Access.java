@@ -4,7 +4,7 @@ public class Access
 {
     public static void main(String... args)
     {
-        var demo = new AccessDemo1();
+        var demo = new AccessDemo();
         demo.test();
         demo.publicMethod();
         demo.protectedMethod();
@@ -12,7 +12,7 @@ public class Access
     }
 }
 
-class AccessDemo1
+class AccessDemo
 {
     // 默认包可见
     // 包中的其他成员及其子类都可调用
