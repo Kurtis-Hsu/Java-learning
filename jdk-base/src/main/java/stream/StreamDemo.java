@@ -1,7 +1,10 @@
-package stdlib.stream;
+package stream;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URI;
+import java.nio.file.FileSystem;
+import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.regex.Pattern;
@@ -24,15 +27,7 @@ public class StreamDemo
         chars.forEach(System.out::println);
 
         // 文本行流
-        var text = Files.lines(
-                Path.of(
-                        URI.create(
-                                "file:///%s/TextStream".formatted(
-                                        System.getProperty("user.dir").replace('\\', '/')
-                                )
-                        )
-                )
-        );
+        var text = Files.lines(Path.of("TextStream"));
         try (text) { text.forEach(System.out::println); }
 
         // 数字流

@@ -1,4 +1,4 @@
-package stdlib.runtime;
+package runtime;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

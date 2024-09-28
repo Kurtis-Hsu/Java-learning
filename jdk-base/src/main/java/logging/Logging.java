@@ -1,4 +1,4 @@
-package stdlib.logging;
+package logging;
 
 import java.io.File;
 import java.util.logging.Logger;

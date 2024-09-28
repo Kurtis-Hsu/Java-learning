@@ -1,4 +1,4 @@
-package stdlib.socket;
+package socket;
 
 import java.io.*;
 import java.net.Socket;

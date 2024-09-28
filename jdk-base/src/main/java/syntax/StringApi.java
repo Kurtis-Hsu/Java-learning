@@ -1,4 +1,4 @@
-package stdlib;
+package syntax;
 
 import static java.lang.System.out;
 
