@@ -11,10 +11,7 @@ public class Methods
         out.println(sum(1, 2, 3, 4));
     }
 
-    static int sum(int a, int b)
-    {
-        return a + b;
-    }
+    static int sum(int a, int b) { return a + b; }
 
     // 方法重载
     static int sum(int a, int b, int c)
