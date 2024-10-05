@@ -11,11 +11,6 @@ import java.util.regex.Pattern;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-/**
- * <h2></h2>
- *
- * @Date 2024-04-15 21:27
- */
 public class StreamDemo
 {
     public static void main(String... args) throws IOException

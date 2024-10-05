@@ -4,13 +4,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-/**
- * <h2>锁</h2>
- * <p>
- * 每个对象都包含自带一个锁
- *
- * @Date 2024-04-02 22:44
- */
+/// 每个对象都自带一个锁
 public class LockDemo
 {
     // 锁
