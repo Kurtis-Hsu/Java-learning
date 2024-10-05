@@ -6,11 +6,6 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.Scanner;
 
-/**
- * <h2>反射</h2>
- *
- * @Date 2023/11/5 16:28
- */
 public class Reflection
 {
     private static final String TAB = "    ";
@@ -27,7 +22,7 @@ public class Reflection
             Class<?> superc1 = c1.getSuperclass();
             String modifiers = Modifier.toString(c1.getModifiers());
 
-            if (modifiers.length() > 0) System.out.print(modifiers + " ");
+            if (!modifiers.isEmpty()) System.out.print(modifiers + " ");
             System.out.print("class " + name);
             if (superc1 != null && superc1 != Object.class)
                 System.out.print(" extends " + superc1.getName());
@@ -44,10 +39,7 @@ public class Reflection
 
             System.out.println('}');
         }
-        catch (ClassNotFoundException e)
-        {
-            e.printStackTrace();
-        }
+        catch (ClassNotFoundException e) { e.printStackTrace(); }
         System.exit(0);
     }
 
@@ -65,7 +57,7 @@ public class Reflection
             String name = c.getName();
             System.out.print(TAB);
             String modifiers = Modifier.toString(c.getModifiers());
-            if (modifiers.length() > 0) System.out.print(modifiers + " ");
+            if (!modifiers.isEmpty()) System.out.print(modifiers + " ");
             System.out.print(name + "(");
 
             // 打印参数
@@ -97,7 +89,7 @@ public class Reflection
 
             // 打印修饰符、返回类型和方法名
             String modifiers = Modifier.toString(m.getModifiers());
-            if (modifiers.length() > 0) System.out.print(modifiers + " ");
+            if (!modifiers.isEmpty()) System.out.print(modifiers + " ");
             System.out.print(rt.getName() + " " + name + "(");
 
             // 打印参数类型
@@ -126,7 +118,7 @@ public class Reflection
             String name = f.getName();
             System.out.print(TAB);
             String modifiers = Modifier.toString(f.getModifiers());
-            if (modifiers.length() > 0) System.out.print(modifiers + " ");
+            if (!modifiers.isEmpty()) System.out.print(modifiers + " ");
             System.out.println(type.getName() + " " + name + ";");
         }
     }

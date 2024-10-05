@@ -2,7 +2,7 @@ package regex;
 
 import java.util.regex.Pattern;
 
-public class RegexDemo1
+public class RegexDemo
 {
     public static void main(String... args)
     {
