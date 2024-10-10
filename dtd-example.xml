@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 文档类型必须匹配根元素的名称 -->
+<!DOCTYPE configuration [
+    <!ELEMENT configuration (font)>
+    <!ELEMENT font (name, size)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT size (#PCDATA)>
+    <!ATTLIST size unit CDATA #REQUIRED>
+]>
+<configuration>
+  <font>
+    <name>Helvetica</name>
+    <size unit="pt">36</size>
+  </font>
+</configuration>

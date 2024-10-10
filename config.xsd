@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="StyleType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PLAIN"/>
+      <xs:enumeration value="BOLD"/>
+      <xs:enumeration value="ITALIC"/>
+      <xs:enumeration value="BOLD_ITALIC"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="FontType">
+    <xs:sequence>
+      <xs:element ref="name"/>
+      <xs:element ref="size"/>
+      <xs:element ref="style"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="name" type="xs:string"/>
+  <xs:element name="size" type="xs:int">
+    <xs:complexType>
+      <xs:attribute name="unit" type="xs:string" default="cm"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="style" type="StyleType"/>
+</xs:schema>

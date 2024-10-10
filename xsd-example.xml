@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<name xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:cus="http://www.kurtis.cn"
+      xsi:schemaLocation="http://www.kurtis.cn config.xsd">
+  <cus:name>
+
+  </cus:name>
+</name>
