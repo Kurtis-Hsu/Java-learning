@@ -10,7 +10,11 @@ public class Comment
      */
 
     /**
-     * 文档注释
+     * <h3>文档注释</h3>
+     *
+     * <p>文档注释给元素添加文档</p>
+     *
+     * <p>可以使用 javadoc 生成文档</p>
      *
      * @param args 参数
      */
@@ -20,14 +24,10 @@ public class Comment
         doSth(); // 双斜杠后面单行内的所有内容都是注释
     }
 
-    /**
-     * 文档注释给元素添加文档
-     * 可以使用 javadoc 生成文档
-     */
     static void doSth() { System.out.println("do sth"); }
 
     /// Java 23 之后可以使用 markdown 语法写文档注释
     ///
-    /// [Class] 引用
+    /// [Class] `[]`引用
     void markdown() { System.out.println("markdown"); }
 }

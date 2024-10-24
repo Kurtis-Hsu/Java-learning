@@ -18,7 +18,7 @@
   </modules>
 
   <properties>
-    <java.version>22</java.version>
+    <java.version>23</java.version>
     <global.encoding>UTF-8</global.encoding>
 
     <kotlin.compiler.target>${java.version}</kotlin.compiler.target>

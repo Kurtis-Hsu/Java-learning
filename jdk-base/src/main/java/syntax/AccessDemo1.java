@@ -1,10 +1,10 @@
 package syntax;
 
-public class Access
+public class AccessDemo1
 {
     public static void main(String... args)
     {
-        var demo = new AccessDemo();
+        var demo = new AccessDemo2();
         demo.test();
         demo.publicMethod();
         demo.protectedMethod();
@@ -12,7 +12,7 @@ public class Access
     }
 }
 
-class AccessDemo
+class AccessDemo2
 {
     // 默认包可见
     // 包中的其他成员及其子类都可调用

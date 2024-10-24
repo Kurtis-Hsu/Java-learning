@@ -13,6 +13,13 @@ public class Methods
 
     static int sum(int a, int b) { return a + b; }
 
+    // 重写父类的方法
+    @Override
+    public String toString()
+    {
+        return "方法重写";
+    }
+
     // 方法重载
     static int sum(int a, int b, int c)
     {
